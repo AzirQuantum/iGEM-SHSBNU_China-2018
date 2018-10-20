@@ -1,0 +1,215 @@
+<html lang="zh-CN">
+<head>
+    <title>Section Sample</title>
+</head>
+
+<body>
+    <link id="Sec_CSS" rel="stylesheet" type="text/css" href="http://2018.igem.org/Template:SHSBNU_China/Sample_css?action=raw&ctype=text/css" />
+    <script src="http://2018.igem.org/Template:SHSBNU_China/Sample_js?action=raw&ctype=text/javascript" type="text/javascript"></script>
+    <script>
+        function getTop(e){
+            var offset=e.offsetTop; 
+            if(e.offsetParent!=null) offset+=getTop(e.offsetParent); 
+            return offset; 
+        } 
+
+        var y_coordinate = getTop("menu_blank")
+
+    	window.onload = function top_button() {
+    		if (y_coordinate>0){
+    			document.getElementById("menu_blank").style.visibility="hidden";
+    		}
+    		else {
+    			document.getElementById("menu_blank").style.visibility="visible";
+    		}
+    	}
+    </script>
+    <div id="main_main">
+	<section id="main">
+		<div onclick="window.scrollTo(0,0);" id="Top_Button">
+			<img style="width:5vw;height:5vw" src="http://2018.igem.org/wiki/images/e/e2/T--SHSBNU_China--Back_To_Top.png"/>
+		</div>
+		<header id="page_header">
+			<div id="header_classification">
+				<div id="home_button">
+					<a style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China">
+						<img style="height:100%; width:100%;" src="http://2018.igem.org/wiki/images/4/48/T--SHSBNU_China--Home_Button.png"/>
+					</a>
+				</div>
+
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcova()" onmouseout="fcoua()" id="fc_Project"><!--Project-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Project">
+							<h4 class="fc_content">Project</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcovb()" onmouseout="fcoub()" id="fc_Experiment"><!--Experiment-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Experiments">
+							<h4 class="fc_content">Experiment</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcovc()" onmouseout="fcouc()" id="fc_Model"><!--Model-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Model">
+							<h4 class="fc_content">Model</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcovd()" onmouseout="fcoud()" id="fc_Human Practice"><!--Human Practice-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Human Practices">
+							<h4 class="fc_content">Human Practice</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcove()" onmouseout="fcoue()" id="fc_Demonstrate"><!--Demonstrate-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Demonstrate">
+							<h4 class="fc_content">Demonstrate</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcovf()" onmouseout="fcouf()" id="fc_Safety"><!--Safety-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Safety">
+							<h4 class="fc_content">Safety</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcovg()" onmouseout="fcoug()" id="fc_Attribution"><!--Attribution-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Attributions">
+							<h4 class="fc_content">Attribution</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw; padding: 0vw; align-self: center; vertical-align: middle; display: table; line-height: 3vw;" class="first_classfication" onmouseover="fcovh()" onmouseout="fcouh()" id="fc_Team"><!--Team-->
+					<div style="height: 2.8vw; display: table-cell; vertical-align: middle">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Team">
+							<h4 style="padding-right: 0.30vw">Team</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="header_title">
+			<a href="http://2018.igem.org/Team:SHSBNU_China">
+				<img id="title_pic" src="http://2018.igem.org/wiki/images/2/23/T--SHSBNU_China--Title.jpeg"/>
+			</a>
+			</div>
+		</header>
+
+		<div id="menu">
+			<h6 id="menu_intro">Attributions</h6>
+			<div class="second_classfication">
+				<a class="snd_class" href="http://2018.igem.org/Team:SHSBNU_China/Attributions#Overview">Overview</a>
+			</div>
+            <div class="second_classfication">
+				<a class="snd_class" href="http://2018.igem.org/Team:SHSBNU_China/Attributions#AD">Attribution Details</a>
+			</div>
+			<div class="third_classfication">
+				<a class="trd_class" href="http://2018.igem.org/Team:SHSBNU_China/Attributions#Q&A">Questions And Answers</a>
+			</div>
+			<div class="second_classfication">
+				<a class="snd_class" href="http://2018.igem.org/Team:SHSBNU_China/Collaborations">Collaborations</a>
+			</div>
+			<div id="menu_blank">
+			</div>
+		</div>
+
+		<div id="articles">
+			<div id="sec_title">
+				<h1>Attributions</h1>
+			</div>
+
+			<div id="sec_content">
+				<h2 id="Overview">I. Overview</h2>
+				<div class="content">
+					<img class="pictures" id = "70000" src="http://2018.igem.org/wiki/images/3/3f/T--SHSBNU_China--70000.png"/>
+					<p class="text">
+						All of us participated in the experiment and wiki writing parts, and our team members discussed the progress of the experiment and mutually monitored it. All of us have our main works. 
+					</p>
+				</div>
+
+				<h2 id="AD">II. Attribution Details</h2>
+				<div class="content">
+					<p class="text">
+						<strong>Zhiran Xie, Chenyu Li, Xuze Shao, Haocong Li, Yijia Yuan, and Yanjun Zhou</strong> participated in Human Practices. <strong>Haocong Li</strong> photographed, while others kept on asking questions related to our project. 
+					</p>
+					<p class="text">
+						<strong>Zhiran Xie, Tieqiong Zhang, Yuanhong Zeng, and Chen Zhang,</strong> all of whom are good at calculating models in computers, collecting data and making models under <strong>Chen's leading</strong>.
+					</p>
+					<p class="text">
+						For team wikis, <strong>Chen Zhang</strong> was responsible for editing and coding. 
+					</p>
+					<p class="text">
+						<strong>Wenrui Hu, Fangning Luo, and Chenyu Li, </strong> the art designers of the team, cooperated to make PPT. 
+					</p>
+					<p class="text">
+						<strong>Tieqiong Zhang and Yanjun Zhou</strong> cooperated to design our safety project and safe shipment. 
+					</p>
+					<p class="text">
+						For the chart “Photos or Art design”, <strong>Yuanhong Zeng and Xuze Shao</strong> worked for graphs, and <strong>Haocong Li,</strong> the best photographer in Team SHSBNU_China, provided most photos.
+					</p>
+				</div>
+
+				<h3 id="Q&A">a. Questions and Answers</h3>
+				<div class="content">
+					<p class="text">
+						<strong>Does your institution teach an iGEM or synthetic biology course?</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						Yes, it is an elective course only for students who have done the “accelerated biology course” of our school. When students have done the accelerated biology course, they will have a test to determine whether they can listen to synthetic biology course and iGEM course in order to broaden their biology knowledge and prepare for the iGEM competition.
+					</li>
+					<p class="text">
+					    <strong>When did you start this course?</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						We start our course every year from September till the iGEM competition for next year. Thus, from September to October that year, our school have 2 parallel courses about synthetic biology and iGEM. 
+					</li>
+					<p class="text">
+						<strong>Are the syllabus and course materials freely available online?</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						Yes, the syllabus and course materials are free to download in our school website. 
+					</li>
+					<p class="text">
+						<strong>When did you start your brainstorming?</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						We started our brainstorming in the spring of 2018.
+					</li>
+					<p class="text">
+						<strong>When did you start in the lab?</strong>
+					</p>
+				    <li style="margin-left:4vw" class="content_list">
+				    	We started working in the lab in July 2018.
+				    </li>
+				    <p class="text">
+				    	<strong>When did you start working on your project?</strong>
+				    </p>
+				    <li style="margin-left:4vw" class="content_list">
+				    	We started our project in September 2018.
+					</li>
+                </div>
+				
+				</div>
+			<div id=footer>
+				<div style="display:table-cell;vertical-align:middle;">
+					<p style="font-size:1vw;font-family:'Times New Roman';font-style:italic;color:#666666">SHSBNU_China 2018, Created by Azir</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	</div>
+</body>

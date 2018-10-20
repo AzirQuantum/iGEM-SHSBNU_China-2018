@@ -1,0 +1,221 @@
+<html lang="zh-CN">
+<head>
+    <title>Section Sample</title>
+</head>
+
+<body>
+    <link id="Sec_CSS" rel="stylesheet" type="text/css" href="http://2018.igem.org/Template:SHSBNU_China/Sample_css?action=raw&ctype=text/css" />
+    <script src="http://2018.igem.org/Template:SHSBNU_China/Sample_js?action=raw&ctype=text/javascript" type="text/javascript"></script>
+    <script>
+        function getTop(e){
+            var offset=e.offsetTop; 
+            if(e.offsetParent!=null) offset+=getTop(e.offsetParent); 
+            return offset; 
+        } 
+
+        var y_coordinate = getTop("menu_blank")
+
+    	window.onload = function top_button() {
+    		if (y_coordinate>0){
+    			document.getElementById("menu_blank").style.visibility="hidden";
+    		}
+    		else {
+    			document.getElementById("menu_blank").style.visibility="visible";
+    		}
+    	}
+    </script>
+    <div id="main_main">
+	<section id="main">
+		<header id="page_header">
+			<div id="header_classification">
+				<div id="home_button">
+					<a style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China">
+						<img style="height:100%; width:100%;" src="http://2018.igem.org/wiki/images/4/48/T--SHSBNU_China--Home_Button.png"/>
+					</a>
+				</div>
+
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcova()" onmouseout="fcoua()" id="fc_Project"><!--Project-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Project">
+							<h4 class="fc_content">Project</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcovb()" onmouseout="fcoub()" id="fc_Experiment"><!--Experiment-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Experiments">
+							<h4 class="fc_content">Experiment</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcovc()" onmouseout="fcouc()" id="fc_Model"><!--Model-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Model">
+							<h4 class="fc_content">Model</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcovd()" onmouseout="fcoud()" id="fc_Human Practice"><!--Human Practice-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Human Practices">
+							<h4 class="fc_content">Human Practice</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcove()" onmouseout="fcoue()" id="fc_Demonstrate"><!--Demonstrate-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Demonstrate">
+							<h4 class="fc_content">Demonstrate</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcovf()" onmouseout="fcouf()" id="fc_Safety"><!--Safety-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Safety">
+							<h4 class="fc_content">Safety</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw;" class="first_classfication" onmouseover="fcovg()" onmouseout="fcoug()" id="fc_Attribution"><!--Attribution-->
+					<div class="fc_box">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Attributions">
+							<h4 class="fc_content">Attribution</h4>
+						</a>
+					</div>
+				</div>
+				
+				<div style="height:5vw; padding: 0vw; align-self: center; vertical-align: middle; display: table; line-height: 3vw;" class="first_classfication" onmouseover="fcovh()" onmouseout="fcouh()" id="fc_Team"><!--Team-->
+					<div style="height: 2.8vw; display: table-cell; vertical-align: middle">
+						<a class="fc_link" style="height:100%; width:100%;" href="http://2018.igem.org/Team:SHSBNU_China/Team">
+							<h4 style="padding-right: 0.30vw">Team</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="header_title">
+			<a href="http://2018.igem.org/Team:SHSBNU_China">
+				<img id="title_pic" src="http://2018.igem.org/wiki/images/2/23/T--SHSBNU_China--Title.jpeg"/>
+			</a>
+			</div>
+		</header>
+		<div id="menu">
+			<h6 id="menu_intro">Collaboration</h6>
+			<div class="second_classfication">
+				<a class="snd_class" href="http://2018.igem.org/Team:SHSBNU_China/Collaborations#Colla">Collaborations</a>
+			</div>
+			<div class="second_classfication">
+				<a class="snd_class" href="http://2018.igem.org/Team:SHSBNU_China/Collaborations#Acknow">Acknowledgements</a>
+			</div>
+			<div class="second_classfication">
+				<a class="snd_class" href="http://2018.igem.org/Team:SHSBNU_China/Attributions">Attribution</a>
+			</div>
+			<div id="menu_blank">
+			</div>
+		</div>
+
+		<div id="articles">
+			<div id="sec_title">
+				<h1>Collaborations</h1>
+			</div>
+
+			<div id="sec_content">
+				<h2 id="Colla">I. Collaborations</h2>
+				<h3>iGEM kit of InterLab shared by BNDS_China</h3>
+				<div class="content">
+					<p class="text">
+						In the first week of the experiment, we could not begin our Interlab project since we had not received our iGEM kit. At that time, round to July 10th, BNDS_China had completed the Interlab project and there was a plethora of materials left, so we borrowed the kit from them so that we could finish our project before the due.
+					</p>
+				</div>
+				<h3>Help BFSUICC_China</h3>
+				<div class="content">
+					<p class="text">
+						As our team followed the procedure of Interlab, we found that we were specialized in the dilution procedure. We had done an excellent job in the dilution process: the colony of different dilutions had perfectly normal differences, and the efficiency was much high. Therefore, we offered help to the team of BFSUICC_China to dilute the sample. Additionally, after having counted the colony, we helped them to wash the plate.
+					</p>
+				</div>
+				<h3>Help from Team Tsinghua</h3>
+				<div class="content">
+					<p class="text">
+						During July and August, we did our experiment in the next room of Team Tsinghua. Sometimes we shared one facility together, including the gel electrophoresis, the balance, the incubator, and the super clean bench. Team Tsinghua was there to help us at anywhere and anytime. Since we were not familiar with the location of some necessities, they were so active to guide us how to get them. Additionally, when we got something confused or incorrect, they were readily to help us. They reminded us to clean the balance after measuring the weight since we sometimes were a little bit careless when using the balance, they guided us to use their gel electrophoresis device, and they told us many of their lab rules in order to keep us safe. 
+					</p>
+				</div>
+				<h3>Modelling Learning with BJRS_China</h3>
+				<div class="content">
+					<li style="margin-left:4vw" class="content_list">
+						In August 11, 2018, our team and BJRS_China learned the basic methods to construct modelling of our data online together. We helped mutually to well comprehend the principle rule and solve questions of one another. All of us assimilated the rule of modelling, and by the time we built solid friendship with teammates of BJRS_China. 
+					</li>
+				</div>
+				<h3>Jointly Organize Northern China High School iGEMers’ Meetup</h3>
+				<div class="content">
+					<li style="margin-left:4vw" class="content_list">
+						In October 4, 2018, 5 Schools in Northern China: RDFZ_China, SHSBNU_China, BFSUICC_China, BJRS_China, and SDSZ_China, together held the Northern China High School iGEMers’ Meetup. The main purpose was to share our lab results, hold a rehearsal of Giant Jamboree presentation, and correct our problems. Our team members—especially Xuze Shao—designed handout of the meetup.
+					</li>
+				</div>
+
+				<h2 id="Acknow">Acknowledgements</h2>
+				<div class="content">
+					<p class="text">
+						<strong>Guoqiang Chen and Haoqian Zhang</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						They helped us design our project.
+					</li>
+					<p class="text">
+						<strong>Chuan Ni and Yihao Zhang</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						They gave advice of the experiment to us and coached our presentations.
+					</li>
+					<p class="text">
+						<strong>Huanhuan Chu</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						She is the advisor of our group responsible for theoretical training and problem discussing.
+					</li>
+					<p class="text">
+						<strong>Blupha Company and Tsinghua Microbiology Lab</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						They provided the lab device and experiment field for us.
+					</li>
+					<p class="text">
+						<strong>Chenrui Qin, Qiaohong Xie, and Tianze Zhu</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						They support us for difficult technique and correct our lab mistakes sometimes.
+					</li>
+					<p class="text">
+						<strong>Qiang Geng</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						He is from Bluepha lab who helped us contact the manager of the human practice site.
+					</li>
+					<p class="text">
+						<strong>Tianze Huang</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						He is the team leader of Tsinghua who always reminded us about particular lab rules.
+					</li>
+						</p>
+					<p class="text">
+						<strong>Parents of us</strong>
+					</p>
+					<li style="margin-left:4vw" class="content_list">
+						They supported us in all aspects financially and mentally.
+					</li>
+				</div>
+			<div id=footer>
+				<div style="display:table-cell;vertical-align:middle;">
+					<p style="font-size:1vw;font-family:'Times New Roman';font-style:italic;color:#666666">SHSBNU_China 2018, Created by Azir</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	</div>
+</body>
